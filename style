@@ -12,6 +12,32 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+/* Style for the custom AR button */
+#ar-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#ar-button:hover {
+    background-color: #0056b3;
+}
+
+#ar-button p {
+    margin: 0;
+    white-space: nowrap;
+}
+
 
 /* Style the model-viewer component */
 model-viewer {
@@ -23,5 +49,6 @@ model-viewer {
     /* Ensure the model fits entirely within the viewport */
     object-fit: contain;
 }
+
 
 
